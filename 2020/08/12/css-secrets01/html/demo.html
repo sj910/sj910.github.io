@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>半透明边框</title>
+  <style>
+    .outer{
+      width: 200px;      
+      margin: 0 auto;
+      padding: 40px;
+      background-color: greenyellow;
+    }
+    .inner{
+      padding: 40px;
+      border: 10px solid hsla(0, 0%, 100%, .5);
+      background: white;
+      background-clip: padding-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+      半透明边框
+    </div>
+  </div>
+</body>
+</html>
